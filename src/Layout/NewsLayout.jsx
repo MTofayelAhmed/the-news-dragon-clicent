@@ -4,7 +4,7 @@ import Footer from "../Pages/Shared/Footer/Footer";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import LeftNav from "../Pages/Shared/LeftNav/LeftNav";
+
 import RightNav from "../Pages/Shared/RightNav/RightNav";
 import { Outlet } from "react-router-dom";
 

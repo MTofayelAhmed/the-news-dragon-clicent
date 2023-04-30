@@ -13,7 +13,8 @@ import {
 import Rating from "react-rating";
 
 const NewsCard = ({ news }) => {
-  const { _id, title, details, image_url, author, total_view, rating } = news;
+  console.log(news)
+  const { _id, title, details, image_url, author, total_view, rating } = news
   return (
     <Card>
       <Card.Header className="d-flex ps-2">
@@ -36,7 +37,7 @@ const NewsCard = ({ news }) => {
             <>{details}</>
           ) : (
             <>
-              {details.slice(0, 250)}.....{" "}
+              {details.slice(0, 250)}
               <Link to={`/news/${_id}`}>Read More</Link>
             </>
           )}
