@@ -9,7 +9,7 @@ const Category = () => {
   console.log(categoryNews);
   return (
     <div>
-      <h2>this is category{categoryNews}</h2>
+
   {categoryNews.map(news=> <NewsCard id= {news._id} news= {news}></NewsCard>)}
     </div>
   );
