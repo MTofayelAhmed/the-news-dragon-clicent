@@ -13,7 +13,7 @@ import {
 import Rating from "react-rating";
 
 const NewsCard = ({ news }) => {
-  console.log(news);
+
   const { _id, title, details, image_url, author, total_view, rating } = news;
   return (
     <Card>

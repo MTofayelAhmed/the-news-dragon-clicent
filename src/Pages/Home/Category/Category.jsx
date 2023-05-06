@@ -6,7 +6,7 @@ const Category = () => {
   const { id } = useParams();
 
   const categoryNews = useLoaderData();
-  console.log(categoryNews);
+
   return (
     <div>
 
