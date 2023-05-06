@@ -5,7 +5,16 @@ import { FaUserAlt } from "react-icons/fa";
 import { AuthContext } from '../../../Provider/AuthProvider';
 
 const NavigationBar = () => {
-  const {user}= useContext(AuthContext)
+  const {user,  logOut}= useContext(AuthContext)
+const handleLogout= ()=>{
+  logOut()
+  .then()
+  .catch(error => {
+    console.log(error)
+  })
+}
+
+
   return (
     <div>
       <Container>
@@ -26,7 +35,7 @@ const NavigationBar = () => {
             { user && <FaUserAlt></FaUserAlt>}
            
           
-           { user?  <Button variant="secondary">LogOut</Button>:
+           { user?  <Button onClick={ handleLogout }variant="secondary">LogOut</Button>:
            <Link to ='/login'><Button variant="secondary">Login</Button></Link>
            
            }
